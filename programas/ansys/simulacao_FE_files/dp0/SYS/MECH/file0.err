@@ -1,0 +1,73 @@
+/COM,ANSYS RELEASE Release 18.1      BUILD 18.1      UP20170403       18:00:11
+
+ *** WARNING ***                         CP =       1.344   TIME= 18:00:17
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       1.438   TIME= 18:00:17
+ Make sure that the rotating element component 1 (component name         
+ CM_ROTVE) is axisymmetric about the axis of spin defined by the         
+ CMOMEGA command to correctly account for the gyroscopic effect in the   
+ stationary reference frame (CORIOLIS, ON,,, ON).                        
+
+ *** WARNING ***                         CP =       1.438   TIME= 18:00:17
+ SOLID186 will generate a gyroscopic damping matrix contribution         
+ (stationary frame ON on the CORIOLIS command) in a dynamic analysis.    
+ The element matrix will be non-symmetric.                               
+
+ *** WARNING ***                         CP =       1.438   TIME= 18:00:17
+ BEAM188 will generate a gyroscopic damping matrix contribution          
+ (stationary frame ON on the CORIOLIS command) in a dynamic analysis.    
+ The element matrix will be non-symmetric.                               
+
+ *** WARNING ***                         CP =       1.672   TIME= 18:00:17
+ Material number 7 (used by element 461 ) should normally have at least  
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =       3.156   TIME= 18:00:26
+ There are 1 negative frequencies.  If the corresponding eigenmodes do   
+ not correspond to rigid body modes, the downstream QR Damp              
+ eigensolution may be incorrect.  Check your model carefully.  If        
+ negative frequencies are expected, you may want to double-check the     
+ eigensolutions using another eigensolver.                               
+
+ *** WARNING ***                         CP =       3.500   TIME= 18:00:29
+ Material number 7 (used by element 461 ) should normally have at least  
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =       3.812   TIME= 18:00:29
+ The file0.modesym file does exist and is being used for the QR damp     
+ eigensolution since the ReuseKey is set to ON on the QRDOPT command.    
+
+ *** WARNING ***                         CP =       4.219   TIME= 18:00:30
+ Material number 7 (used by element 461 ) should normally have at least  
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =       4.719   TIME= 18:00:30
+ The file0.modesym file does exist and is being used for the QR damp     
+ eigensolution since the ReuseKey is set to ON on the QRDOPT command.    
+
+ *** WARNING ***                         CP =       6.000   TIME= 18:00:33
+ Sorting process may not be successful due to the shape of some modes.   
+ If results are not satisfactory, try to change the load steps and/or    
+ the number of modes.                                                    
+
+ *** WARNING ***                         CP =       6.000   TIME= 18:00:33
+ At least one of the frequencies is unstable.  Instability check is made 
+ on real part of eigenvalue.  If damping is very small, re-running the   
+ model using another eigensolver is strongly recommended to              
+ double-check the instability prediction.                                
+
+ *** WARNING ***                         CP =       6.000   TIME= 18:00:33
+ Sorting process may not be successful due to the shape of some modes.   
+ If results are not satisfactory, try to change the load steps and/or    
+ the number of modes.                                                    
+
+ *** WARNING ***                         CP =       6.000   TIME= 18:00:33
+ At least one of the frequencies is unstable.  Instability check is made 
+ on real part of eigenvalue.  If damping is very small, re-running the   
+ model using another eigensolver is strongly recommended to              
+ double-check the instability prediction.                                

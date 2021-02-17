@@ -1,0 +1,87 @@
+xlballb tracking file -03/08/2007-
+     number of balls = 8
+       ball diameter = 0.0047625
+      pitch diameter = 0.0235
+design contact angle = 0
+          o.r. curv. = 0.53
+          i.r. curv. = 0.516
+  internal clearance = 0
+o.r. poisson's ratio = 0.3
+i.r. poisson's ratio = 0.3
+ball poisson's ratio = 0.3
+o.r. elastic modulus = 1.99926e+011
+i.r. elastic modulus = 1.99926e+011
+ball elastic modulus = 1.99926e+011
+        ball density = 7833.54
+          o.r. speed = 0
+          i.r. speed = 5235.99
+         x b.c. flag = 1
+        x b.c. value = -1
+         z b.c. flag = 1
+        z b.c. value = -1
+        y deflection = 0
+    about x rotation = 0
+    about y rotation = 0
+
+ Bearing Stiffness Based On Partial Derivatives, Deadband & Load Level
+    Kxx       Kxy       Kyx       Kyy       Cxx     Cxy     Cyx    Cyy   SPEED
+9.5183e+006         0         0 9.5183e+006       0       0       0       0
+
+
+
+ COMPUTE DEFLECTIONS (0=NO,1=YES)
+          X AXIS = 1             
+          Y AXIS = 0             
+          Z AXIS = 1             
+
+         REACTIONS OF BEARING ON SHAFT    BEARING DEFLECTION (OUTER-INNER)
+ ALONG X:          1.00009                6.98981e-008 
+ ALONG Y:     1.41043e-007                    0.000000 
+ ALONG Z:          1.00007                1.47101e-005 
+ ABOUT X:     3.10628e-010                    0.000000 
+ ABOUT Y:       0.00214883                    0.000000 
+
+ RELATIVE AXIAL MOVEMENT (CLEARANCE+DEFORMATION) = 1.47101e-005 
+
+ BALL        BALL          CONTACT LOAD           CONTACT ANGLE     CENTRIFUGAL  TYPE OF 
+NUMBER     AZIMUTH      OUTER       INNER       OUTER       INNER      FORCE     CONTROL 
+  1       0.000000     24.1721    0.934098    0.292723     10.5492     23.2532    OUTER
+  2        45.0000     24.1006    0.854691    0.269536     10.5947     23.2600    OUTER
+  3        90.0000     23.9347    0.669862    0.214408     10.7032     23.2762    OUTER
+  4        135.000     23.7788    0.495202    0.160772     10.8090     23.2922    OUTER
+  5        180.000     23.7173    0.426055    0.139110     10.8518     23.2988    OUTER
+  6        225.000     23.7788    0.495202    0.160772     10.8090     23.2922    OUTER
+  7        270.000     23.9347    0.669862    0.214408     10.7032     23.2762    OUTER
+  8        315.000     24.1006    0.854691    0.269536     10.5947     23.2600    OUTER
+
+ BALL     CONTACT AREA LENGTH     CONTACT AREA WIDTH    MEAN COMPRESSIVE STRESS    
+NUMBER      OUTER      INNER       OUTER       INNER        OUTER      INNER       
+  1    0.000535668 0.0002397899.35692e-0052.26136e-0056.14040e+0082.19332e+008
+  2    0.000535139 0.0002327929.34768e-0052.19542e-0056.13433e+0082.12929e+008
+  3    0.000533908 0.0002146309.32619e-0052.02425e-0056.12022e+0081.96310e+008
+  4    0.000532746 0.0001940689.30590e-0051.83041e-0056.10691e+0081.77497e+008
+  5    0.000532287 0.0001845789.29788e-0051.74095e-0056.10164e+0081.68815e+008
+  6    0.000532746 0.0001940689.30590e-0051.83041e-0056.10691e+0081.77497e+008
+  7    0.000533908 0.0002146309.32619e-0052.02425e-0056.12022e+0081.96310e+008
+  8    0.000535139 0.0002327929.34768e-0052.19542e-0056.13433e+0082.12929e+008
+
+ BALL     CONTACT DEFLECTION           H/D VALUE         ROTATIONAL    ORBITAL   GYROSCOPIC
+NUMBER     OUTER      INNER       OUTER        INNER      VELOCITY    VELOCITY     MOMENT
+  1   1.23474e-0061.27113e-007  0.00325133   0.0139275    -119771.     20180.9-0.000113157
+  2   1.23230e-0061.19802e-007  0.00322160   0.0138532    -119789.     20183.8-0.000104224
+  3   1.22664e-0061.01839e-007  0.00315178   0.0136409    -119831.     20190.9-8.29648e-005
+  4   1.22131e-0068.32608e-008  0.00308497   0.0133676    -119872.     20197.8-6.22533e-005
+  5   1.21920e-0067.53173e-008  0.00305830   0.0132302    -119889.     20200.7-5.38805e-005
+  6   1.22131e-0068.32608e-008  0.00308497   0.0133676    -119872.     20197.8-6.22533e-005
+  7   1.22664e-0061.01839e-007  0.00315178   0.0136409    -119831.     20190.9-8.29648e-005
+  8   1.23230e-0061.19802e-007  0.00322160   0.0138532    -119789.     20183.8-0.000104224
+
+
+ STIFFNESS MATRIX AS PARTIAL DERIVATIVES OF REACTIONS WITH RESPECT TO DISPLACEMENTS
+          X           Y           Z          Mx          My
+  X 1.4277e+007 5.9269e-001 1.3930e+005 1.2224e-003 3.0227e+004
+  Y 5.9269e-001 1.4307e+007 1.0336e-001 3.0327e+004 1.2224e-003
+  Z 1.3898e+005 1.0468e-001 1.0005e+006 2.3777e-004 2.9512e+002
+ Mx 1.2380e-003 3.0740e+004 2.3777e-004 7.0088e+001 2.8120e-006
+ My 3.0639e+004 1.2380e-003 2.9512e+002 2.8120e-006 6.9840e+001
+

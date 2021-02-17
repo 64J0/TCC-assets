@@ -1,0 +1,21 @@
+﻿# encoding: utf-8
+# Release 18.1
+SetScriptVersion(Version="18.1.463")
+system1 = GetSystem(Name="SYS")
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="ASTM A36")
+matlProp1 = material1.GetProperty(Name="Isotropic Hardening")
+materialPropertyData1 = matlProp1.GetPropertyData(
+    Name="Isotropic Hardening",
+    Qualifiers={"Definition": "Bilinear", "Behavior": ""})
+materialVariable1 = materialPropertyData1.GetVariable(Name="Tangent Modulus")
+parameter1 = Parameters.CreateParameter(
+    Entity=materialVariable1,
+    PropertyName="ParameterValue",
+    DisplayText="Tangent Modulus")
+parameter1.ValueQuantityName = "Stress"
+parameter1.Disassociate(
+    Entity=materialVariable1,
+    PropertyName="ParameterValue")
+parameter1.Delete()
+Save(Overwrite=True)

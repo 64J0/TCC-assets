@@ -1,0 +1,218 @@
+﻿# encoding: utf-8
+# Release 18.1
+SetScriptVersion(Version="18.1.463")
+system1 = GetSystem(Name="SYS")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+Save(Overwrite=True)
+geometry1.Exit()
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+geometry1.Edit()
+geometry1.Exit()
+modelComponent1.Refresh()
+model1.Edit()
+model1.Exit()
+modelComponent1.Update(AllDependencies=True)
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="ABNT 1020")
+matlProp1 = matl1.CreateProperty(
+    Name="Density",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp1.SetVariableProperty(
+    VariableName="Density",
+    Property="Unit",
+    Value="g cm^-3")
+matlProp1.SetData(
+    Index=-1,
+    Variables=["Density"],
+    Values=[["7.85 [g cm^-3]"]])
+matlProp2 = matl1.CreateProperty(
+    Name="Coefficient of Thermal Expansion",
+    Definition="Secant",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "Secant", "Behavior": "Isotropic"})
+matlProp2.SetData(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+    Index=-1,
+    Variables=["Coefficient of Thermal Expansion"],
+    Values=[["1.17E-05 [C^-1]"]])
+matlProp3 = matl1.CreateProperty(
+    Name="Elasticity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp3.SetData(
+    Index=-1,
+    Variables=["Poisson's Ratio"],
+    Values=[["0.29"]])
+matlProp3.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["205000000000 [Pa]"]])
+matlProp4 = matl1.CreateProperty(
+    Name="Stress Limits",
+    Behavior="Orthotropic",
+    Qualifiers={"Definition": "", "Behavior": "Orthotropic"})
+matlProp4.SetData(
+    Index=-1,
+    Variables=["Tensile X direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp4.SetData(
+    Variables=["Tensile Y direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp4.SetData(
+    Variables=["Tensile Z direction"],
+    Values=[["420000000 [Pa]"]])
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+matlProp4.Delete(Behavior="Orthotropic")
+matl1.SetColor(
+    Red=119,
+    Green=153,
+    Blue=186)
+Save(Overwrite=True)
+library2 = EngData.OpenLibrary(
+    Name="Explicit Materials",
+    Source="Explicit_Materials.xml")
+matlProp5 = matl1.CreateProperty(
+    Name="Stress Limits",
+    Behavior="Orthotropic",
+    Qualifiers={"Definition": "", "Behavior": "Orthotropic"})
+matlProp5.SetData(
+    Index=-1,
+    Variables=["Tensile X direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp5.SetData(
+    Variables=["Tensile Y direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp5.SetData(
+    Variables=["Tensile Z direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp5.SetData(
+    Variables=["Shear XY"],
+    Values=[["80000000000 [Pa]"]])
+matlProp5.SetData(
+    Variables=["Shear YZ"],
+    Values=[["80000000000 [Pa]"]])
+matlProp5.SetData(
+    Variables=["Shear XZ"],
+    Values=[["80000000000 [Pa]"]])
+matlProp5.SetData(
+    Variables=["Compressive X direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp5.SetData(
+    Variables=["Compressive Y direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp5.SetData(
+    Variables=["Compressive Z direction"],
+    Values=[["420000000 [Pa]"]])
+Save(Overwrite=True)
+matlProp5.Delete(Behavior="Orthotropic")
+matlProp6 = matl1.CreateProperty(
+    Name="Stress Limits",
+    Behavior="Orthotropic",
+    Qualifiers={"Definition": "", "Behavior": "Orthotropic"})
+matlProp6.SetData(
+    Index=-1,
+    Variables=["Tensile X direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp6.SetData(
+    Variables=["Tensile Y direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp6.SetData(
+    Variables=["Tensile Z direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp6.SetData(
+    Variables=["Compressive X direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp6.SetData(
+    Variables=["Compressive Y direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp6.SetData(
+    Variables=["Compressive Z direction"],
+    Values=[["420000000 [Pa]"]])
+matlProp6.SetData(
+    Variables=["Shear XY"],
+    Values=[["80000000000 [Pa]"]])
+matlProp6.SetData(
+    Variables=["Shear YZ"],
+    Values=[["80000000000 [Pa]"]])
+matlProp6.SetData(
+    Variables=["Shear XZ"],
+    Values=[["80000000000 [Pa]"]])
+matlProp6.SetData(
+    SheetName="Stress Limits",
+    SheetQualifiers={"Definition": "", "Behavior": "Orthotropic"},
+    Variables=["Temperature"],
+    Values=[["25 [C]"]])
+matlProp3.SetData(
+    SheetName="Elasticity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"},
+    Variables=["Temperature"],
+    Values=[["25 [C]"]])
+matlProp1.SetData(
+    SheetName="Density",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Variables=["Temperature"],
+    Values=[["25 [C]"]])
+EngData.EnableFilter(Enable=False)
+matl2 = engineeringData1.CreateMaterial(Name="AM")
+matl2.DisplayName = "ASTM A36"
+matlProp7 = matl2.CreateProperty(
+    Name="Density",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp7.SetVariableProperty(
+    VariableName="Density",
+    Property="Unit",
+    Value="g cm^-3")
+matlProp7.SetData(
+    Index=-1,
+    Variables=["Density"],
+    Values=[["8 [g cm^-3]"]])
+matlProp7.SetData(
+    Variables=["Density"],
+    Values=[["7.85 [g cm^-3]"]])
+matlProp7.SetData(
+    SheetName="Density",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Variables=["Temperature"],
+    Values=[["25 [C]"]])
+matlProp8 = matl2.CreateProperty(
+    Name="Elasticity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp8.SetData(
+    Index=-1,
+    Variables=["Poisson's Ratio"],
+    Values=[["0.26"]])
+matlProp8.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["200000000000 [Pa]"]])
+matlProp9 = matl2.CreateProperty(
+    Name="Isotropic Hardening",
+    Definition="Bilinear",
+    Qualifiers={"Definition": "Bilinear", "Behavior": ""})
+matlProp9.SetData(
+    Index=-1,
+    Variables=["Yield Strength"],
+    Values=[["250000000 [Pa]"]])
+matlProp10 = matl2.CreateProperty(
+    Name="Elasticity",
+    Behavior="Orthotropic",
+    Qualifiers={"Definition": "", "Behavior": "Orthotropic"})
+matlProp10.Delete(Behavior="Orthotropic")
+materialPropertyData1 = matlProp10.GetPropertyData(
+    Name="Elasticity",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"})
+materialPropertyData1.SetSuppression(Suppressed=False)
+Save(Overwrite=True)

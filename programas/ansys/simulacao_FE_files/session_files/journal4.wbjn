@@ -1,0 +1,18 @@
+﻿# encoding: utf-8
+# Release 18.1
+SetScriptVersion(Version="18.1.463")
+Update()
+system1 = GetSystem(Name="SYS")
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Update(AllDependencies=True)
+modelComponent1.Refresh()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="ASTM A36")
+material1.SetSuppression(Suppressed=True)
+material2 = engineeringData1.GetMaterial(Name="ABNT 1020")
+material2.SetSuppression(Suppressed=True)
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Update()
+Save(Overwrite=True)

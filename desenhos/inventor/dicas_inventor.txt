@@ -1,0 +1,6 @@
+Comandos e dicas do Autodesk Inventor ==========================
+
+scroll pressionado -> span
+scroll rotacionado -> dar zoom na parte que o cursor toca
+scroll duplo clique -> localiza a peça no ambiente de trabalho, semelhante ao zoom all
+shift + scroll -> rotacionar a peça em torno de algum eixo

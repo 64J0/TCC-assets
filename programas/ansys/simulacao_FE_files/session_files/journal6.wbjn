@@ -1,0 +1,24 @@
+﻿# encoding: utf-8
+# Release 18.1
+SetScriptVersion(Version="18.1.463")
+template1 = GetTemplate(TemplateName="EngData")
+system1 = GetSystem(Name="SYS")
+system2 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="Explicit Materials",
+    Source="Explicit_Materials.xml")
+library2 = EngData.OpenLibrary(
+    Name="Thermal Materials",
+    Source="Thermal_Materials.xml")
+library3 = EngData.OpenLibrary(
+    Name="Magnetic B-H Curves",
+    Source="Magnetic_B-H_curves_Soft_Materials.xml")
+library4 = EngData.OpenLibrary(
+    Name="Geomechanical Materials",
+    Source="GeoMechanical_Materials.xml")
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+Save(Overwrite=True)
