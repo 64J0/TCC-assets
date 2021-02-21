@@ -1,0 +1,80 @@
+XLRotor version 4.5 tracking file, Oct 19, 2015, mode shape calculation
+number of stations 5 
+number of bearings 2 
+number of speeds   1 
+scalefactor 500000 
+gravity     1 
+idmp        1 
+epsilon        0 
+include shear 1 
+rigid shaft   0 
+undamped c.s. 1 
+include gyroscopics 1 
+compute torsional modes 0 
+speed of mode shape 3.16228e+06 
+eigenvalue of mode shape (0, i*166.535) 
+station data:  /no./length/mass/ti/pi/ei/ga/
+ 1	   0.295 	0.146676 	-0.00212889 	2.95717e-06 	 264.121 	1.01341e+07 
+ 2	    0.01 	 1.15325 	-0.00419987 	0.00411135 	1.08248e+07 	1.92402e+09 
+ 3	   0.295 	 1.15325 	-0.00419987 	0.00411135 	 264.121 	1.01341e+07 
+ 4	   0.052 	0.172531 	-0.0021408 	3.47844e-06 	 264.121 	1.01341e+07 
+ 5	       0 	0.0258547 	-1.19125e-05 	5.21264e-07 	       1 	       1 
+
+max_brg_plow     = 0
+total_brg_plow   = 0
+total_brg_phigh  = 2
+max_ptmat_degree = 3
+
+ BEARING INPUT DATA
+STN. | NO. OF |  FIT  | FIRST | TILT | MOM/ | U.C.S. | U.C.S. 
+ NO. | SPEEDS | ORDER | POWER | COEF.| LAT. | FACTOR | CONST. 
+  1  |    2   |   1   |   0   |   0  |    0 |     1  |     0   
+  4  |    2   |   1   |   0   |   0  |    0 |     1  |     0   
+
+
+ BEARING INPUT AT STATION NO. 1
+
+    SPEED          Kxx           Kxy           Kyx           Kyy           Cxx           Cxy           Cyx           Cyy  
+              
+        0             0             0             0             0             0             0             0             0
+        0             0             0             0             0             0             0             0             0
+
+ BEARING INPUT AT STATION NO. 4
+
+    SPEED          Kxx           Kxy           Kyx           Kyy           Cxx           Cxy           Cyx           Cyy  
+              
+        0             0             0             0             0             0             0             0             0
+        0             0             0             0             0             0             0             0             0
+
+ BEARING CURVE FIT AT STATION NO. 1
+ CURVE FIT      Kxx           Kxy           Kyx           Kyy           Cxx           Cxy           Cyx           Cyy  
+        0             0             0             0             0             0             0             0             0
+        1             1             0             0             1             0             0             0             0
+
+ BEARING CURVE FIT AT STATION NO. 4
+ CURVE FIT      Kxx           Kxy           Kyx           Kyy           Cxx           Cxy           Cyx           Cyy  
+        0             0             0             0             0             0             0             0             0
+        1             1             0             0             1             0             0             0             0
+
+
+ BEARING COEFFICIENTS AT STATION NO. 1 AT ANALYSIS STIFFNESSES
+   STIFFNESS         Kxx           Kxy           Kyx           Kyy           Cxx           Cxy           Cyx           Cyy           Mxx           Mxy           Myx           Myy
+3.16228e+06   3.16228e+06             0             0   3.16228e+06             0             0             0             0
+
+ BEARING COEFFICIENTS AT STATION NO. 4 AT ANALYSIS STIFFNESSES
+   STIFFNESS         Kxx           Kxy           Kyx           Kyy           Cxx           Cxy           Cyx           Cyy           Mxx           Mxy           Myx           Myy
+3.16228e+06   3.16228e+06             0             0   3.16228e+06             0             0             0             0
+
+
+Rotor Shape for N=3.16228e+06 rpm, s=(0,i166.535)
+values are ordered (real,imag) for x,y,ax,ay
+             1             1             0             0             0             0       488.149       488.149
+       98.7122       98.7122             0             0             0             0     0.0428636     0.0428636
+       98.7126       98.7126             0             0             0             0     0.0420296     0.0420296
+      0.994069      0.994069             0             0             0             0      -488.384      -488.384
+      -24.4043      -24.4043             0             0             0             0      -488.442      -488.442
+max cross sectional shear - 4.46638e+06
+Shear and Bending Moments at right end
+   9.20223e-06   9.20223e-06             0             0             0             0  -1.61086e-08  -1.61086e-08
+
+after Put_dMatrix() ierr= 0 
