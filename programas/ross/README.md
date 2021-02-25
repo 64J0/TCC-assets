@@ -23,10 +23,26 @@ $ sudo apt install python3-pip
 # instala o pacote ross
 $ pip3 install ross-rotordynamics
 
+# no ubuntu não é mostrado o plot do rotor quando o algoritmo é executado no terminal
+# por isso precisei instalar algumas extensões do VSCode para conseguir usar um 
+# notebook e plotar a imagem nele:
+#
+# lista de extensões:
+#
+# 1. Jupyther (MIcrosoft)
+# 2. Python (Microsoft)
+# 
+# além disso também instalei uma lib do python necessária para plotar o gráfico:
+$ pip3 install nbformat
+
 # executar o projeto
 $ cd <pasta_com_codigo>
-$ python3 index.py
+$ python3 index.py # não plota o gráfico, mas mostra os prints
 ```
+
+### Referências:
+
+[1] - [Método dos Elementos Finitos - Prof. Dr. William Maluf](https://www.youtube.com/watch?v=jj8HHIDWoEQ&list=PLd10Go8vsVYhqIueE3zfntvcZp7aqAQ8p&index=1)
 
 ---
 Vinícius Gajo Marques Oliveira, 2021
