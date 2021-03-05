@@ -1,4 +1,14 @@
-﻿dp0/global/MECH/SYS.engd
+﻿dp0/global/MECH/SYS/Contact Tool/CAERep.xml
+dp0/global/MECH/SYS/Contact Tool/CAERepOutput.xml
+dp0/global/MECH/SYS/Contact Tool/ds.dat
+dp0/global/MECH/SYS/Contact Tool/file.cnd
+dp0/global/MECH/SYS/Contact Tool/file.rcn
+dp0/global/MECH/SYS/Contact Tool/file0.err
+dp0/global/MECH/SYS/Contact Tool/file1.err
+dp0/global/MECH/SYS/Contact Tool/file1.out
+dp0/global/MECH/SYS/Contact Tool/MatML.xml
+dp0/global/MECH/SYS/Contact Tool/solve.out
+dp0/global/MECH/SYS.engd
 dp0/global/MECH/SYS.mechdb
 dp0/SYS/ENGD/EngineeringData.xml
 dp0/SYS/ENGD/material.engd
@@ -24,6 +34,7 @@ dp0/global/
 dp0/SYS/
 dp0/global/MECH/
 dp0/global/MECH/SYS/
+dp0/global/MECH/SYS/Contact Tool/
 dp0/SYS/DM/
 dp0/SYS/ENGD/
 dp0/SYS/MECH/

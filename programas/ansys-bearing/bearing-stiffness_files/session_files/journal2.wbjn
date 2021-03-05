@@ -11,3 +11,7 @@ model1.Edit()
 system1.DisplayText = "Rolamento SKF"
 system1.DisplayText = "Rolamento SKF - 6201-2Z"
 Save(Overwrite=True)
+model1.Edit()
+model1.Exit()
+modelComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)

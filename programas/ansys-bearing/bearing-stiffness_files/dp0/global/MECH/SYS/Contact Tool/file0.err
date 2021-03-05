@@ -1,0 +1,5 @@
+/COM,ANSYS RELEASE 2021 R1           BUILD 21.1      UP20201109       23:27:00
+
+ *** WARNING ***                         CP =       1.422   TIME= 23:27:01
+ Maximum contact stiffness 3.210001889E+16 is too big which can cause an 
+ accuracy problem, you may scale the force units in the model.           

@@ -1,14 +1,14 @@
-/COM,ANSYS RELEASE 2021 R1           BUILD 21.1      UP20201109       18:31:23
+/COM,ANSYS RELEASE 2021 R1           BUILD 21.1      UP20201109       23:25:44
 
- *** WARNING ***                         CP =       0.953   TIME= 18:31:24
+ *** WARNING ***                         CP =       1.391   TIME= 23:25:45
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** WARNING ***                         CP =       1.141   TIME= 18:31:24
- Material number 38 (used by element 26828) should normally have at      
+ *** WARNING ***                         CP =       1.734   TIME= 23:25:46
+ Material number 38 (used by element 43102) should normally have at      
  least one MP or one TB type command associated with it.  Output of      
  energy by material may not be available.                                
 
- *** WARNING ***                         CP =       1.312   TIME= 18:31:24
- Maximum contact stiffness 3.176766111E+16 is too big which can cause an 
+ *** WARNING ***                         CP =       1.922   TIME= 23:25:46
+ Maximum contact stiffness 3.210001889E+16 is too big which can cause an 
  accuracy problem, you may scale the force units in the model.           
