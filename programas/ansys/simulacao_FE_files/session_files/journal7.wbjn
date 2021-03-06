@@ -1,0 +1,9 @@
+# encoding: utf-8
+# 2021 R1
+SetScriptVersion(Version="21.1.216")
+system1 = GetSystem(Name="SYS")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+system1.DisplayText = "Modal - Bancada"
+model1.Exit()
+Save(Overwrite=True)
