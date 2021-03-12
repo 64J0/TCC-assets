@@ -13,7 +13,7 @@
 /COM,
 ! ****** End   Custom Load Command Snippet ******
 *DIM,_wb_ProjectScratch_dir,string,248
-_wb_ProjectScratch_dir(1) = 'C:\Users\vinig\Desktop\codes\TCC-assets\programas\ansys\_ProjectScratch\Scr98B2\'
+_wb_ProjectScratch_dir(1) = 'C:\Users\vinig\Desktop\codes\TCC-assets\programas\ansys\_ProjectScratch\Scr8D6C\'
 *DIM,_wb_SolverFiles_dir,string,248
 _wb_SolverFiles_dir(1) = 'C:\Users\vinig\Desktop\codes\TCC-assets\programas\ansys\simulacao_FE_files\dp0\SYS\MECH\'
 *DIM,_wb_userfiles_dir,string,248

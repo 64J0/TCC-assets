@@ -1,44 +1,44 @@
-/COM,ANSYS RELEASE 2021 R1           BUILD 21.1      UP20201109       21:24:15
+/COM,ANSYS RELEASE 2021 R1           BUILD 21.1      UP20201109       13:38:47
 
- *** WARNING ***                         CP =       0.453   TIME= 21:24:16
+ *** WARNING ***                         CP =       0.375   TIME= 13:38:48
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** WARNING ***                         CP =       0.453   TIME= 21:24:16
+ *** WARNING ***                         CP =       0.375   TIME= 13:38:48
  Make sure that the rotating element component 1 (component name         
  CM_ROTVE) is axisymmetric about the axis of spin defined by the         
  CMOMEGA command to correctly account for the gyroscopic effect in the   
  stationary reference frame (CORIOLIS, ON,,, ON).                        
 
- *** WARNING ***                         CP =       0.484   TIME= 21:24:16
+ *** WARNING ***                         CP =       0.375   TIME= 13:38:48
  Material number 7 (used by element 1018) should normally have at least  
  one MP or one TB type command associated with it.  Output of energy by  
  material may not be available.                                          
 
- *** WARNING ***                         CP =       1.688   TIME= 21:24:18
+ *** WARNING ***                         CP =       1.703   TIME= 13:38:49
  Material number 7 (used by element 1018) should normally have at least  
  one MP or one TB type command associated with it.  Output of energy by  
  material may not be available.                                          
 
- *** WARNING ***                         CP =       1.844   TIME= 21:24:18
+ *** WARNING ***                         CP =       1.859   TIME= 13:38:50
  The file0.modesym file does exist and is being used for the QR damp     
  eigensolution since the ReuseKey is set to ON on the QRDOPT command.    
 
- *** WARNING ***                         CP =       2.188   TIME= 21:24:18
+ *** WARNING ***                         CP =       2.234   TIME= 13:38:50
  Material number 7 (used by element 1018) should normally have at least  
  one MP or one TB type command associated with it.  Output of energy by  
  material may not be available.                                          
 
- *** WARNING ***                         CP =       2.328   TIME= 21:24:18
+ *** WARNING ***                         CP =       2.422   TIME= 13:38:50
  The file0.modesym file does exist and is being used for the QR damp     
  eigensolution since the ReuseKey is set to ON on the QRDOPT command.    
 
- *** WARNING ***                         CP =       2.672   TIME= 21:24:19
+ *** WARNING ***                         CP =       2.844   TIME= 13:38:51
  Sorting process may not be successful due to the shape of some modes.   
  If results are not satisfactory, try to change the load steps and/or    
  the number of modes.                                                    
 
- *** WARNING ***                         CP =       2.672   TIME= 21:24:19
+ *** WARNING ***                         CP =       2.875   TIME= 13:38:51
  Sorting process may not be successful due to the shape of some modes.   
  If results are not satisfactory, try to change the load steps and/or    
  the number of modes.                                                    

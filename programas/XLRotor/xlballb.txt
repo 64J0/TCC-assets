@@ -1,0 +1,66 @@
+xlballb tracking file -03/08/2007-
+     number of balls = 7
+       ball diameter = 0.006
+      pitch diameter = 0.022
+design contact angle = 0.349065
+          o.r. curv. = 0.53
+          i.r. curv. = 0.516
+  internal clearance = 0
+o.r. poisson's ratio = 0.25
+i.r. poisson's ratio = 0.25
+ball poisson's ratio = 0.25
+o.r. elastic modulus = 1.99926e+011
+i.r. elastic modulus = 1.99926e+011
+ball elastic modulus = 1.99926e+011
+        ball density = 7833.54
+          o.r. speed = 0
+          i.r. speed = 5235.99
+         x b.c. flag = 1
+        x b.c. value = -10
+         z b.c. flag = 1
+        z b.c. value = -1
+        y deflection = 0
+    about x rotation = 0
+    about y rotation = 0
+
+ Bearing Stiffness Based On Partial Derivatives, Deadband & Load Level
+    Kxx       Kxy       Kyx       Kyy       Cxx     Cxy     Cyx    Cyy   SPEED
+8.23509e+006         0         0 8.23509e+006       0       0       0       0
+
+
+
+ COMPUTE DEFLECTIONS (0=NO,1=YES)
+          X AXIS = 1             
+          Y AXIS = 0             
+          Z AXIS = 1             
+
+         REACTIONS OF BEARING ON SHAFT    BEARING DEFLECTION (OUTER-INNER)
+ ALONG X:          10.0000                1.85017e-005 
+ ALONG Y:         0.000000                    0.000000 
+ ALONG Z:          1.00000               -8.17528e-005 
+ ABOUT X:         0.000000                    0.000000 
+ ABOUT Y:        0.0110902                    0.000000 
+
+ RELATIVE AXIAL MOVEMENT (CLEARANCE+DEFORMATION) = 1.26444e-005 
+
+ BALL        BALL          CONTACT LOAD           CONTACT ANGLE     CENTRIFUGAL  TYPE OF 
+NUMBER     AZIMUTH      OUTER       INNER       OUTER       INNER      FORCE     CONTROL 
+  1       0.000000     45.6647     10.0499    0.956178     5.71059     35.6544    OUTER
+
+ BALL     CONTACT AREA LENGTH     CONTACT AREA WIDTH    MEAN COMPRESSIVE STRESS    
+NUMBER      OUTER      INNER       OUTER       INNER        OUTER      INNER       
+  1    0.000718672 0.000581239 0.0001300205.18073e-0056.22229e+0084.24938e+008
+
+ BALL     CONTACT DEFLECTION           H/D VALUE         ROTATIONAL    ORBITAL   GYROSCOPIC
+NUMBER     OUTER      INNER       OUTER        INNER      VELOCITY    VELOCITY     MOMENT
+  1   1.77173e-0065.89901e-007  0.00441808  0.00960657    -85263.8     18254.8-0.000713986
+
+
+ STIFFNESS MATRIX AS PARTIAL DERIVATIVES OF REACTIONS WITH RESPECT TO DISPLACEMENTS
+          X           Y           Z          Mx          My
+  X 1.2353e+007 0.0000e+000 9.7165e+005 0.0000e+000 1.0776e+004
+  Y 0.0000e+000 0.0000e+000 0.0000e+000 0.0000e+000 0.0000e+000
+  Z 9.8130e+005 0.0000e+000 1.5710e+005 0.0000e+000 1.7423e+003
+ Mx 0.0000e+000 0.0000e+000 0.0000e+000 0.0000e+000 0.0000e+000
+ My 1.0883e+004 0.0000e+000 1.7423e+003 0.0000e+000 1.9323e+001
+
